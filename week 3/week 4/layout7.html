@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    
+    <title>Layout 7</title>
+    
+    <style>
+    
+        div {
+            outline: 1px solid black;
+        }
+        
+        
+        #container {
+            margin: auto;
+            max-height: 2200px;
+            max-width: 800px;
+        }
+        
+        #blue {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr
+            background-color: blue;
+            height: 100px;
+            padding: 20px;
+        }
+        
+            .yellow {
+                background-color: yellow;
+                margin: 20 px;      
+        }
+        
+        #green {
+            background-color: lime;
+            height: 400px;
+        }
+        
+        #red {
+            display: grid;
+            grid-template-rows: 1fr 2fr;
+            grid-template-columns: 1fr 1fr 1fr;
+            background-color: red;
+            height: 300px;
+        }
+        
+            .yellow2 {
+                grid-template-columns: 3/3;
+                grid-column: 1fr 2fr;
+                background-color: yellow;
+                margin: 20px;
+                
+            }
+        
+        
+        .blue2 {
+            background-color: blue;
+            height: 500px;
+        }
+        
+        #green {
+            background-color: lime;
+            height: 400px;
+        }
+        
+        #red2 {
+            background-color: red;
+            height: 400px;
+        }
+        
+        #blue3 {
+            background-color: blue;
+            height: 100px;
+        }
+    </style>
+    
+</head>
+
+<body>
+    
+    <div id="container">
+        <div id="blue">
+        <div class="yellow"></div>
+        <div class="yellow"></div>
+        </div>
+        <div id="green"></div>
+        <div id="red">
+        <div class="yellow2"></div>
+        <div class="yellow2"></div>
+    
+        </div>
+        <div class="blue2"></div>
+        <div id="green"></div>
+        <div id="red2"></div>
+        <div id="blue3"></div>
+        
+    </div>
+</body>
+
+</html>
