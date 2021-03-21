@@ -13,67 +13,142 @@
             outline: 1px solid black;
         }
         
+        body {
+            margin: 0;
+        }
         
         #container {
             margin: auto;
-            max-height: 2200px;
             max-width: 800px;
         }
         
-        #blue {
+        #blue1 {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
-            grid-template-rows: 1fr 1fr 1fr
             background-color: blue;
             height: 100px;
-            padding: 20px;
+            padding: 10px;
         }
         
-            .yellow {
-                background-color: yellow;
-                margin: 20 px;      
+        #blue1 .yellow1 {
+            background-color: yellow;
+            margin: 20px;      
         }
         
-        #green {
+        #blue1 .yellow2 {
+            background-color: yellow;
+            grid-column-start: 2;
+            grid-column-end: 4;
+            margin: 20px;
+        }
+        
+        #green1 {
             background-color: lime;
-            height: 400px;
+            height: 500px;
         }
         
-        #red {
+        #red1 {
             display: grid;
-            grid-template-rows: 1fr 2fr;
             grid-template-columns: 1fr 1fr 1fr;
             background-color: red;
             height: 300px;
+            padding: 10px;
         }
         
-            .yellow2 {
-                grid-template-columns: 3/3;
-                grid-column: 1fr 2fr;
-                background-color: yellow;
-                margin: 20px;
+        #red1 .yellow1 {
+            background-color: yellow;
+            grid-column-start: 1;
+            grid-column-end: 4;
+            height: 80px;
+            margin: 20px;
+        }
+        
+        #red1 .yellow2 {
+            background-color: yellow;
+            height: 150px;
+            margin: 20px;
                 
             }
         
         
-        .blue2 {
+        #blue2 {
+            display: grid;
             background-color: blue;
-            height: 500px;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            height: 600px;
+            padding: 10px;
         }
         
-        #green {
+        #blue2 .yellow1 {
+            background-color: yellow;
+            grid-column-start: 1;
+            grid-column-end: 5;
+            height: 50px;
+            margin: 20px;
+        }
+        
+        #blue2 .yellow2 {
+            background-color: yellow;
+            height: 100px;
+            margin: 20px;
+        }
+        
+        #green2 {
+            display: grid;
             background-color: lime;
-            height: 400px;
+            grid-template-columns: 1fr 1fr 1fr;
+            height: 500px;
+            padding 10px;
+        }
+        
+        #green2 .yellow1 {
+            background-color: yellow;
+            grid-column-start: 1;
+            grid-column-end: 4;
+            height: 80px;
+            margin: 20px;
+        }
+        
+        #green2 .yellow2 {
+            background-color: yellow;
+            height: 300px;
+            margin: 20px;
         }
         
         #red2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
             background-color: red;
-            height: 400px;
+            height: 500px;
+            padding: 10px;
         }
+        
+        #red2 .yellow1 {
+            background-color: yellow;
+            grid-column-start: 1;
+            grid-column-end: 4;
+            height: 100 px;
+            margin: 20px;
+        }
+        
+        #red2 .yellow2 {
+            background-color: yellow;
+            grid-column-start: 1;
+            grid-column-end: 3;
+            height: 350px;
+            margin: 20px;
+        }
+        
+        #red2 .yellow3 {
+            background-color: yellow;
+            height: 200px;
+            margin: 20px;
+        } 
         
         #blue3 {
             background-color: blue;
             height: 100px;
+            padding: 10px;
         }
     </style>
     
@@ -82,22 +157,54 @@
 <body>
     
     <div id="container">
-        <div id="blue">
-        <div class="yellow"></div>
-        <div class="yellow"></div>
+        
+        <div id="blue1">
+        <div class="yellow1"></div>
+        <div class="yellow2"></div>
         </div>
-        <div id="green"></div>
-        <div id="red">
+        
+        <div id="green1"></div>
+        
+        <div id="red1">
+        <div class="yellow1"></div>
         <div class="yellow2"></div>
         <div class="yellow2"></div>
-    
+        <div class="yellow2"></div>
         </div>
-        <div class="blue2"></div>
-        <div id="green"></div>
-        <div id="red2"></div>
+        
+        <div id="blue2">
+        <div class="yellow1"></div>
+        <div class="yellow2"></div>
+        <div class="yellow2"></div>
+        <div class="yellow2"></div>
+        <div class="yellow2"></div>
+        <div class="yellow2"></div>
+        <div class="yellow2"></div>
+        <div class="yellow2"></div>
+        <div class="yellow2"></div>
+        <div class="yellow2"></div>
+        <div class="yellow2"></div>
+        <div class="yellow2"></div>
+        <div class="yellow2"></div>
+        </div>
+        
+        <div id="green2">
+        <div class="yellow1"></div>
+        <div class="yellow2"></div>
+        <div class="yellow2"></div>
+        <div class="yellow2"></div>
+        </div>
+        
+        <div id="red2">
+        <div class="yellow1"></div>
+        <div class="yellow2"></div>
+        <div class="yellow3"></div>
+        </div>
+        
         <div id="blue3"></div>
         
     </div>
+    
 </body>
 
 </html>
