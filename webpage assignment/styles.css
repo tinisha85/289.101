@@ -1,8 +1,18 @@
- { outline: 1px solid red; }
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    width: 100%;
+}
+
+.img-banner {
+    display: none;
+}
 
 body {
-    background-color: darkgrey;
-    background-image: url('img/bw-photography.gif');
+    background-color: #111;
     background-repeat: no-repeat;
     background-position: center 280px, left top;
     background-size: 800px, auto;
@@ -17,7 +27,7 @@ body {
     font-weight: bold;
     text-align: center;
     word-spacing: 2em;
-    border-bottom: 2px dashed #487;
+    border-bottom: 2px dashed white;
 }
 
 
