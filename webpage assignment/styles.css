@@ -1,0 +1,50 @@
+ { outline: 1px solid red; }
+
+body {
+    background-color: darkgrey;
+    background-image: url('img/bw-photography.gif');
+    background-repeat: no-repeat;
+    background-position: center 280px, left top;
+    background-size: 800px, auto;
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;      
+}
+
+#nav {
+    background-color: black;
+    padding: 20px 0;
+    color: #FFF;
+    font-weight: bold;
+    text-align: center;
+    word-spacing: 2em;
+    border-bottom: 2px dashed #487;
+}
+
+
+#header {
+    text-align:center;
+    margin-top: 40px;
+
+}
+
+#logo-name {
+    max-width: 220px;
+    width: 100%;
+}
+
+#logo {
+    max-width: 100px;
+    width: 100%;
+}
+
+.enter_btn {
+    background-color: black;
+    border: 2px dashed #000000;
+    border-radius: 2em;
+    color: #FFF;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: bold;
+    margin-top: 25px;
+    padding: 15px 30px;
+}
