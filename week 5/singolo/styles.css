@@ -1,4 +1,21 @@
 body {
     background-color: #F2F2F2;
-    margin: 0 0 0 0;
+    margin: 0;
+}
+
+* {
+outline: 1px dotted line;
+}
+
+.header {
+    background-color: #2D2F3B;
+    color: white;
+    height: 90px;
+}
+
+.nav {
+    max-width: 950px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 200px auto;
 }

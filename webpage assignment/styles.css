@@ -1,60 +1,88 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,900&display=swap');
+*
+{
     margin: 0;
     padding: 0;
+    box-sizing: border-box; 
+    font-family: 'Roboto', sans-serif;
 }
 
-.wrapper {
-    width: 100%;
+section {
+    padding: 100px;
+}
+.banner {
+    position: relative;
+    min-height: 100vh;
+    background: url(img/bw-photography.gif);
+    background-size: cover;
+    background-position: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.img-banner {
-    display: none;
+.banner h2 {
+    font-size: 3em;
+    color: #fff;
+    font-weight: 500;
+    line-weight: 1.5em;
 }
 
-body {
-    background-color: #111;
-    background-repeat: no-repeat;
-    background-position: center 280px, left top;
-    background-size: 800px, auto;
-    font-family: 'Quicksand', sans-serif;
-    margin: 0;      
+.banner h2 span {
+    font-size: 1.5em;
+    font-weight: 700;
 }
 
-#nav {
-    background-color: black;
-    padding: 20px 0;
-    color: #FFF;
-    font-weight: bold;
-    text-align: center;
-    word-spacing: 2em;
-    border-bottom: 2px dashed white;
-}
-
-
-#header {
-    text-align:center;
-    margin-top: 40px;
-
-}
-
-#logo-name {
-    max-width: 220px;
-    width: 100%;
-}
-
-#logo {
-    max-width: 100px;
-    width: 100%;
-}
-
-.enter_btn {
-    background-color: black;
-    border: 2px dashed #000000;
-    border-radius: 2em;
-    color: #FFF;
-    cursor: pointer;
+.btn {
+    position: relative;
+    background: #2196f3;
     display: inline-block;
-    font-weight: bold;
-    margin-top: 25px;
-    padding: 15px 30px;
+    color: #fff;
+    margin-top: 20px;
+    padding: 10px 30px;
+   font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: 500;   
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+header .logo {
+    color: #fff;
+    font-size: 24px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+header ul {
+    position: relative;
+    list-style: none;
+}
+
+header ul li {
+    position: relative;
+    list-style: none;
+}
+
+header ul li a {
+    position: relative;
+    display: inline-block;
+    margin: 0 15px;
+    color: #fff;
+    text-decoration: none;
 }
