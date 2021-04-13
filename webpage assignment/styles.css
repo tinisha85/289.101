@@ -103,6 +103,10 @@ header ul li a {
     text-decoration: none;
 }
 
+header ul li a:hover {
+    background: darkgrey;
+}
+
 heading {
     width: 100%;
     text-align: center;
@@ -142,7 +146,7 @@ img {
   padding: 0 4px;
 }
 
-/* Create four equal columns that sits next to each other */
+/* four equal columns next to each other (tablet) */
 .column {
   flex: 25%;
   max-width: 25%;
@@ -163,7 +167,7 @@ img {
   }
 }
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+/* two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
   .column {
     flex: 100%;
