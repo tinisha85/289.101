@@ -15,6 +15,21 @@
         height: 50px;
     }
     
+    .limegreen {
+        background-color: limegreen;
+        height: 100px;
+    }
+    
+    .orange {
+        background-color: orange;
+        height: 150;
+    }
+    
+    .grey {
+        background-color: grey;
+        height 50px;
+    }
+    
     /* xs devices */
     body { background-color: red }
     
@@ -26,11 +41,26 @@
     /* md devices */
     @media (min-width: 768px) {
         body { background-color: yellow }
+        .limegreen {
+            height: 300px;
+        }
+        .orange {
+            height: 150;
+        }
     }
     
     /* lg devices */
     @media (min-width: 992px) {
         body { background-color: green }
+        .limegreen {
+            height: 250px;
+        }
+        .orange {
+            height: 200px;
+        }
+        .grey {
+            height: 200px;
+        }
     }
     
     /* xl devices */
@@ -41,17 +71,27 @@
 </style>
 </head>
 <body>
-   <div class="container">
+   <div class="container-fluid">
         <div class="row">
-        <div class="col-lg-6 blue"></div>
-        <div class="col-lg-6 blue"></div>
+        <div class="col-12 col-lg-6 blue"></div>
+        <div class="col-12 col-lg-6 blue"></div>
         </div>
+
+    <div class="row limegreen"></div>
     
     <div class="row">
-        <div class=""   
+        <div class="col-12 col-lg-4 orange"></div>
+        <div class="col-12 col-lg-4 orange"></div>
+        <div class="col-12 col-lg-4 orange"></div> 
     </div>
-</div> 
     
+    <div class="row">
+        <div class="col-6 col-lg-3 grey d-non d-md-block"></div>
+        <div class="col-6 col-lg-3 grey d-non d-md-block"></div>
+        <div class="col-6 col-lg-3 grey d-non d-md-block"></div>
+        <div class="col-6 col-lg-3 grey d-non d-md-block"></div>
+    </div>
+    </div>
 </body>
 
 </html>

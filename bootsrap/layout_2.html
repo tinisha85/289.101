@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="uft-8" />
+    <title>Layout 2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    
+<style>
+    * { outline: white 8px solid }
+    
+    .blue {
+        background-color: #3FB4FF;
+        height: 100px;
+    }
+    
+    .green {
+        background-color: #A6D800;
+        height: 100px;
+    }
+    
+   /* .orange {
+        background-color: #FFAE2E;
+        height: 600;
+    }
+    */
+    .grey {
+        background-color: #C4C4C4;
+        height: 200px;
+    }
+    
+    .maroon {
+        background-color: #AF3552;
+        height: 300;
+    }
+    
+    .lillac {
+        background-color: #EC8FEF;
+        height: 100px;
+    }
+    
+     /* xs devices*/
+    .maroon {
+        height: 200px;
+    }
+    
+    /* sm devices */
+    @media (min-width: 576px) {
+    }
+    
+    /* md devices */
+    @media (min-width: 768px) {
+        .blue {
+            height: 100px;
+        }
+        .green {
+            height: 200px;
+        }
+        .grey {
+            height: 150px;
+        }
+        .maroon {
+            height: 450px;
+        }
+    }
+    
+    /* lg devices */
+    @media (min-width: 992px) {
+        .blue {
+            height: 60px;
+        }
+        .green {
+            height: 600px;
+        }
+        .orange {
+            height: 600px;
+        }
+        .grey {
+            height: 100px;
+        }
+        .maroon {
+            height: 600px;
+        }
+        .lillac {
+            height: 100px;
+        }
+        
+    }
+    
+    /* xl devices */
+    @media (min-width: 1200px) {
+        
+    }
+       </style>
+    </head>
+    
+    
+    <body>
+        
+        <div class="container-fluid"> 
+            
+            <div class="row blue"></div>
+            
+            <div class="row">
+                <div class="col-12 col-lg-3 green"></div>
+                
+                <div class="col-12 col-md-6 col-lg-6 orange">
+                
+                <div class="row">
+                <div class="col-6 col-lg-4 grey"></div>
+                <div class="col-lg-8 d-none d-lg-block lillac"></div>
+                <div class="col-6 col-lg-4 grey"></div>
+                <div class="col-lg-8 d-none d-lg-block lillac"></div>
+                <div class="col-6 col-lg-4 grey"></div>
+                <div class="col-lg-8 d-none d-lg-block lillac"></div>
+                <div class="col-6 col-lg-4 grey"></div>
+                <div class="col-lg-8 d-none d-lg-block lillac"></div>
+                <div class="col-6 col-lg-4 grey"></div>
+                <div class="col-lg-8 d-none d-lg-block lillac"></div>
+                <div class="col-6 col-lg-4 grey"></div>
+                <div class="col-lg-8 d-none d-lg-block lillac"></div>
+                </div>
+                
+                </div>
+                
+                <div class="col-12 col-md-6 col-lg-3 maroon"></div>
+                
+            </div>
+        </div>
+        
+    </body>
+
+</html>
